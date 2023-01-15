@@ -1,0 +1,123 @@
+// 参考文献 https://qiita.com/Y_ASAMOTO/items/d5f33ecf5bfbb7f028a5
+
+
+// --e-global-color-primary: #6EC1E4;
+// --e-global-color-secondary: #54595F;
+// --e-global-color-text: #7A7A7A;
+// --e-global-color-accent: #61CE70;
+// --e-global-color-63198bf: #728DC7;
+// --e-global-color-235ebe8: #FEB003;
+// --e-global-color-e77f092: #EB6362;
+// --e-global-color-2c0f52f: #5FB399;
+// --e-global-color-eea8bac: #424242;
+// --e-global-color-a17764e: #E44A4F;
+
+
+// 変数設定
+$baseColor: black; //デフォルトの文字色
+$baseWidth: auto;
+$headerHight: 512px;
+
+body{
+    width: $baseWidth;
+    margin: 5px auto ;
+    border: dashed;
+}
+
+header{
+    width: $baseWidth;
+    height: $headerHight;
+    position: relative;
+    
+    background: 
+        linear-gradient(0deg, #728DC7, #424242);
+        // linear-gradient(217deg, #FEB003, rgba(255,0,0,0) 70.71%),
+        // linear-gradient(127deg, #EB6362, rgba(0,255,0,0) 70.71%),
+        // linear-gradient(336deg, #5FB399, rgba(0,0,255,0) 70.71%);
+        // radial-gradient(#728DC7, black),
+        // linear-gradient(90deg,#FEB003, 50%),
+        // linear-gradient(180deg, #EB6362, 40%),
+        // linear-gradient(270deg, #5FB399),
+        // linear-gradient(0deg,#424242)
+        ;
+
+
+    // border-bottom: double 10px  rgb(155, 155, 162);
+    color: white;
+
+    .header-container{
+        display: flex;
+
+        .header-title{
+            margin-left: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    
+        .nav{
+            margin: auto;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    }
+
+    .header-message{
+        text-align: center;
+        margin: auto;
+        font-weight: 700;
+        font-size: 64px;
+
+        position: absolute;
+        top: $headerHight/2;
+        left: 20%;
+        right: 20%;
+    }
+
+}
+
+.post-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    .card{
+        width: 364px;
+        height: auto;
+        border: solid 2px #FEB003;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 5px 5px #424242;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+
+        .name-age-time{
+            display: flex;
+            border-bottom: double 3px #FEB003;
+
+            .name-age{
+                margin-right: auto ;
+                margin-left: 10px;
+                color:#E44A4F;
+                font-weight: 700;
+            }
+
+            .time{
+                margin-left: auto ;
+                margin-right: 10px;
+            }
+        }
+
+        .comment{
+            margin: 10px;
+        }
+    }
+
+ 
+
+    .class{
+        margin-right: auto;
+        margin-left: auto ;
+    }
+}
+
